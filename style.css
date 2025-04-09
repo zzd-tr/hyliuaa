@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Calibri', sans-serif;
+  background: linear-gradient(135deg, #ffffff, #000000); /* White to Black Gradient Background */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  justify-content: flex-start; /* Keeps content aligned to the top */
+  align-items: center;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  height: auto; /* Removed fixed height to let the container grow */
+}
+
+/* Content Styles */
+.content {
+  max-width: 1000px;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem; /* Adds space below content */
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Intro Paragraph Styles */
+.intro {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  line-height: 1.1;
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+/* Email Button Styles */
+.email-button {
+  padding: 0.8rem 2rem;
+  background-color: #ffffff;
+  color: #2575fc;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 5rem; /* Increased to move the button lower */
+}
+
+.email-button:hover {
+  background-color: #2575fc;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* Footer Styles */
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1rem;
+  color: #f0f0f0;
+  opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .email-button {
+    padding: 0.6rem 1.8rem;
+  }
+
+  footer {
+    position: static;
+    margin-top: 1rem;
+  }
+}
